@@ -26,6 +26,9 @@ Project United is dedicated to fostering a sense of togetherness and promoting p
 
 ### Note: Project United is an independent platform and is not affiliated with any specific organization or political party. We strive to provide accurate and up-to-date information, but we encourage users to verify details independently before taking any action.
 
+## User Story
+As a user of Project United, I want to be able to browse and discover local organizations and their services so that I can learn about different causes and find opportunities to contribute.
+
 
 ## Research Links
 * [Example](https://examplelink.com/replace)
