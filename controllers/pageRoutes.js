@@ -2,13 +2,25 @@ const router = require("express").Router();
 const path = require("path");
 
 router.get("/home", async (req, res) => {
-  res.send("not implemented index.html");
+  try {
+    res.render("homepage", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 router.get("/activism", async (req, res) => {
-  res.send("hello from the activism page");
+  try {
+    res.render("activism", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 router.get("/friendlyspaces", async (req, res) => {
-  res.send("hello from the friendlyspaces");
+  try {
+    res.render("friendlyspaces", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
