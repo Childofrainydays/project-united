@@ -1,9 +1,8 @@
 const path = require("path");
 const express = require("express");
-// const expressHandlebars = require("express-handlebars");
-const routes = require("./controllers/routes.js");
-// const sequelize = require("./config/connection");
-// var mysql = require("mysql");
+const expressHandlebars = require("express-handlebars");
+const routes = require("./controllers");
+const sequelize = require("./config/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,10 +19,8 @@ const PORT = process.env.PORT || 3001;
 
 app.use("/", routes);
 
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => console.log("Now listening"));
-// });
+app.use(routes);
 
-app.listen(PORT, () =>
-  console.log(`App is running on http://localhost:${PORT}`)
-);
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now listening"));
+});
