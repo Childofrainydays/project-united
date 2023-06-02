@@ -8,6 +8,7 @@ const routes = require("./controllers/routes.js");
 const helper = require("./utils/helpers.js");
 
 const mysql = require("mysql");
+
 const sequelize = require("./config/connection");
 
 const app = express();
@@ -24,9 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", routes);
 
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => console.log("Now listening"));
-// });
+app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("server online"));
