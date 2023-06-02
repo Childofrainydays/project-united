@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-//all activism organizations should be derived from this class
-class Activism extends Model {}
+//Object that Friendly Spaces are Derived From
+class FriendlySpaces extends Model {}
 
-Activism.init(
+FriendlySpaces.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,10 +13,6 @@ Activism.init(
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    cause: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -40,10 +36,12 @@ Activism.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    date_created: {
-      type: DataTypes.DATE,
+    friendly_rating: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
+      validate: {
+        len: [5],
+      },
     },
   },
   {
@@ -51,8 +49,8 @@ Activism.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "activism",
+    modelName: "friendy-spaces", 
   }
 );
 
-module.exports = Activism;
+module.exports = FriendlySpaces;

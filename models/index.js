@@ -1,3 +1,4 @@
-const User = require('./User');
+const Activism = require("./Activism");
+const Friendly_Spaces = require("./FriendlySpaces");
 
-module.exports = { User };
+module.exports = { Activism, Friendly_Spaces };
