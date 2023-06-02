@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const activism = require("../db/Activism.json");
-const friendlySpaces = require("../db/FriendlySpaces.json");
+const activism = require("../seeds/Activism.json");
+const friendlySpaces = require("../seeds/FriendlySpaces.json");
 
 /*
 router.get("/activism", async (req, res) => {
