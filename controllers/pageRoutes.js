@@ -8,11 +8,19 @@ router.get("/home", async (req, res) => {
     res.status(500).json(err);
   }
 });
-// router.get("/activism", async (req, res) => {
-//   res.send("hello from the activism page");
-// });
-// router.get("/friendlyspaces", async (req, res) => {
-//   res.send("hello from the friendlyspaces");
-// });
+router.get("/activism", async (req, res) => {
+  try {
+    res.render("activism", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+router.get("/friendlyspaces", async (req, res) => {
+  try {
+    res.render("friendlyspaces", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
