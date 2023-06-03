@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-//all activism organizations should be derived from this class
+//Base model for the sequelized Models
 class Activism extends Model {}
 
 Activism.init(
