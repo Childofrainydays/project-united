@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-//Object that Friendly Spaces are Derived From
+//Friendly Spaces Model to store all of the friendly stores and locations
 class FriendlySpaces extends Model {}
 
 FriendlySpaces.init(
@@ -49,7 +49,7 @@ FriendlySpaces.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "friendy-spaces", 
+    modelName: "friendy-spaces",
   }
 );
 
