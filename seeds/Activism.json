@@ -1,6 +1,5 @@
 [
   {
-    "id": "1",
     "name": "Better_Utah",
     "cause": "Sustainability, Government, Equality",
     "location": "Utah",
@@ -11,7 +10,6 @@
     "date_created": ""
   },
   {
-    "id": "2",
     "name": "Armed_Queers",
     "cause": "Self Determinism, Self Defense and Community Building",
     "location": "Utah",
@@ -22,7 +20,6 @@
     "date_created": ""
   },
   {
-    "id": "3",
     "name": "Save_Our_Great_Salt_Lake",
     "cause": "Sustainability and Environmental Conservation",
     "location": "Utah",
