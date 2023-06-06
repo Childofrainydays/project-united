@@ -9,6 +9,8 @@ router.get("/home", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//Activism sending over the correct Sequelize data
 router.get("/activism", async (req, res) => {
   try {
     const activismData = await Activism.findAll({
@@ -24,6 +26,8 @@ router.get("/activism", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//Friendly spaces sending over the correct Sequelize data
 router.get("/friendlyspaces", async (req, res) => {
   try {
     res.render("friendlyspaces", {});
