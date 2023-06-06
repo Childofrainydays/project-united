@@ -7,9 +7,6 @@ Project United is a dedicated website aimed at promoting community engagement an
 * Comprehensive Organization Directory
 Project United brings together a diverse array of local organizations, making it easier for users to explore the available resources. Our directory provides an updated list of organizations along with detailed information about the causes they support and the services they offer. Whether you're passionate about environmental conservation, social justice, education, or healthcare, you'll find the right organization to support and get involved with.
 
-* Tracking Local Legislation
-Stay informed about local legislation that effects your community. While we don't offer an in-depth analysis, we provide a general overview and updates on relevant local policies. Our goal is to help you understand the issues being discussed and encourage you to engage with your local representatives and take an active role in shaping your community's future.
-
 * Local News Section
 Our local news section highlights stories that are relevant to the community, including upcoming events, volunteer opportunities, success stories, and other noteworthy developments. We aim to foster a sense of community by sharing important information and inspiring stories that celebrate the positive impact made by local organizations.
 
@@ -25,6 +22,11 @@ Join the Movement
 Project United is dedicated to fostering a sense of togetherness and promoting positive change in local communities. By joining our movement, you contribute to creating a more connected, supportive, and inclusive society. Together, let's build a better future for everyone.
 
 ### Note: Project United is an independent platform and is not affiliated with any specific organization or political party. We strive to provide accurate and up-to-date information, but we encourage users to verify details independently before taking any action.
+
+### Future Implementation Goals
+* Tracking Local Legislation
+Stay informed about local legislation that effects your community. While we don't offer an in-depth analysis, we provide a general overview and updates on relevant local policies. Our goal is to help you understand the issues being discussed and encourage you to engage with your local representatives and take an active role in shaping your community's future.
+
 
 ## User Story
 As a user of Project United, I want to be able to browse and discover local organizations and their services so that I can learn about different causes and find opportunities to contribute.
