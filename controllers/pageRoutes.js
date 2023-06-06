@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const path = require("path");
-const { Activism, FriendlySpaces } = require("../models");
+const { Activism, FriendlySpaces, Friendly_Spaces } = require("../models");
 
 router.get("/home", async (req, res) => {
   try {
@@ -28,7 +28,13 @@ router.get("/activism", async (req, res) => {
 //Friendly spaces sending over the correct Sequelize data
 router.get("/friendlyspaces", async (req, res) => {
   try {
-    res.render("friendlyspaces", {});
+    const friendlyData = await Friendly_Spaces.findAll();
+    const friendlyMap = friendlyData.map((friendly) =>
+      friendly.get({ plain: true })
+    );
+    res.render("friendlyspaces", {
+      friendlyMap,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
