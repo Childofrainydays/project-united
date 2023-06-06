@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3001;
 
 //adds in the helpers
 const handleEnv = expressHandlebars.create({ helper });
+app.use(express.static("views"));
 
 //sets the render engine to handlebars
 app.engine("handlebars", handleEnv.engine);
