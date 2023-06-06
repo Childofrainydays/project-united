@@ -2,7 +2,7 @@ const router = require("express").Router();
 const path = require("path");
 const { Activism, Friendly_Spaces, Articles } = require("../models");
 
-router.get("/home", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     res.render("homepage", {});
   } catch (err) {
