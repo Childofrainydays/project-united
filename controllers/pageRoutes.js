@@ -34,6 +34,7 @@ router.get("/friendlyspaces", async (req, res) => {
     const friendlyMap = friendlyData.map((friendly) =>
       friendly.get({ plain: true })
     );
+    console.log(friendlyMap);
     res.render("friendlyspaces", {
       friendlyMap,
     });

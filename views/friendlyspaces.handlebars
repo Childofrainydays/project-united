@@ -5,5 +5,14 @@
     people</p>
 </section>
 {{#each friendlyMap as |friendly|}}
-  <h3>{{friendly.name}}</h3>
+  <section>
+    <br />
+    <h3>Buisiness Name: {{friendly.name}}</h3>
+    <h4>Location: {{friendly.location}}</h4>
+    <p>Hours: {{friendly.hours}}</p>
+    <p>Description: {{friendly.description}}</p>
+    <p>Contact Them! {{friendly.contact}}</p>
+    <p>Additional Info: {{friendly.additional_info}}</p>
+    <p>Friendly Rating: {{friendly.friendly_rating}}/5</p>
+  </section>
 {{/each}}

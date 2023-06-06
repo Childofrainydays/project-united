@@ -6,5 +6,14 @@
     get involved in your community</p>
 </section>
 {{#each activismMap as |activism|}}
-  <h3>{{activism.name}}</h3>
+  <section>
+    <br />
+    <h3>Organization: {{activism.name}}</h3>
+    <p>Cause: {{activism.cause}}</p>
+    <p>Location: {{activism.location}}</p>
+    <p>Hours: {{activism.hours}}</p>
+    <p>Description: {{activism.description}}</p>
+    <p>Contact: {{activism.contact}}</p>
+    <p>Additional Info: {{activism.additional_info}}</p>
+  </section>
 {{/each}}
