@@ -1,35 +1,29 @@
 [
   {
-    "id": "1",
     "name": "Better_Utah",
     "cause": "Sustainability, Government, Equality",
     "location": "Utah",
     "hours": "",
     "description": "An organization dedicated to building strong communities, building a sustainable future for Utah, Keeping Government working for the people, Working for Equality, and working for causes such as clean air and water for Utahns",
     "contact": "P.O. Box 521855, SLC, UT 84152: (801) 613-2439 : info@betterutah.institute",
-    "additional info": "https://betterutahinstitute.org/",
-    "date_created": ""
+    "additional info": "https://betterutahinstitute.org/"
   },
   {
-    "id": "2",
     "name": "Armed_Queers",
     "cause": "Self Determinism, Self Defense and Community Building",
     "location": "Utah",
     "hours": "",
     "description": "The Armed Queers is a socialist LGBTQ organization dedicated to the self-defense , and self-determination, of people's movements.",
     "contact": "https://linktr.ee/armedqueersslc",
-    "additional info": "",
-    "date_created": ""
+    "additional info": ""
   },
   {
-    "id": "3",
     "name": "Save_Our_Great_Salt_Lake",
     "cause": "Sustainability and Environmental Conservation",
     "location": "Utah",
     "hours": "",
     "description": "Save Our Great Salt Lake is a group of organizers, artists, business owners, and concerned citizens working together to prevent ecosystem collapse at the Great Salt Lake.",
     "contact": "https://www.facebook.com/saveourgreatsaltlake : instagram.com/saveourgreatsaltlake/ : https://twitter.com/saveourgsl : saveourgreatsaltlake@gmail.com",
-    "additional info": "https://www.saveourgreatsaltlake.org/",
-    "date_created": ""
+    "additional info": "https://www.saveourgreatsaltlake.org/"
   }
 ]
