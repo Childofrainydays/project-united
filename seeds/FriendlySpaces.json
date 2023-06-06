@@ -1,32 +1,32 @@
 [
   {
     "id": "1",
-    "name": "Sunset_Coffee",
+    "name": "Sunset Coffee",
     "location": "7978 S 1300 E, Sandy, UT",
     "hours": "6am-12am Sun-Thurs, 6am-1am Fri-Sat",
     "description": "Sandy Coffe shop that is LGBTQIA+ friendly and fosters a great atmosphere",
     "contact": "(801) 233-9151",
-    "additional_info": "",
+    "additional_info": "Refer to Page",
     "friendly_rating": 5
   },
   {
     "id": "2",
-    "name": "Pig_&_A_Jelly_Jar",
+    "name": "Pig & A Jelly Jar",
     "location": "401 E 900 S, Salt Lake City",
     "hours": "8:00am-3:30pm Sun-Sat",
     "description": "Restaurant with a Funky fixture preparing a locally sourced menu of American comfort foods with a contemporary twist.",
     "contact": "(385) 202-7366",
-    "additional_info": "",
+    "additional_info": "Refer to Page",
     "friendly_rating": 5
   },
   {
     "id": "3",
-    "name": "Laziz_Kitchen",
+    "name": "Laziz Kitchen",
     "location": "912 Jefferson Street West, Salt Lake City",
     "hours": "11:00am-9:00pm Mon-Thurs, 11:00am - 10:00pm Fri-Sat, 12:00pm-8:00pm Sun",
     "description": "Tasty and Lighthearted Middle Eastern Food",
     "contact": "(801) 441-1228 : Hello@lazizkitchen.com",
-    "additional_info": "",
+    "additional_info": "Refer to Page",
     "friendly_rating": 4
   }
 ]

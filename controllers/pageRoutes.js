@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const path = require("path");
-const { Activism, Friendly_Spaces } = require("../models");
+const { Activism, Friendly_Spaces, Articles } = require("../models");
 
 router.get("/home", async (req, res) => {
   try {
@@ -36,6 +36,18 @@ router.get("/friendlyspaces", async (req, res) => {
     );
     res.render("friendlyspaces", {
       friendlyMap,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/news", async (req, res) => {
+  try {
+    const newsData = await Articles.findAll();
+    const newsMap = newsData.map((news) => news.get({ plain: true }));
+    res.render("news", {
+      newsMap,
     });
   } catch (err) {
     res.status(500).json(err);
