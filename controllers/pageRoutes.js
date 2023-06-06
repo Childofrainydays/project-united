@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const path = require("path");
-const { Activism, FriendlySpaces } = require("../models");
+const { Activism, Friendly_Spaces } = require("../models");
 
 router.get("/home", async (req, res) => {
   try {
@@ -11,7 +11,9 @@ router.get("/home", async (req, res) => {
 });
 router.get("/activism", async (req, res) => {
   try {
-    const activismData = await Activism.findAll();
+    const activismData = await Activism.findAll({
+      include: [],
+    });
     const activismMap = activismData.map((activism) =>
       activism.get({ plain: true })
     );
