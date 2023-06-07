@@ -1,4 +1,3 @@
-/* Color scheme */
 :root {
   --text: #f2e8cc;
   --red: #ff0000;
@@ -6,8 +5,8 @@
   --blue: #1500ff;
   --background: #0d1733;
 }
-/* Potential Light and Dark Theme */
-/* [data-theme="light"],
+/* / Potential Light and Dark Theme / */
+/* / [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --text: #0d1733;
   --red: #ff0000;
@@ -23,12 +22,12 @@
   --blue: #1500ff;
   --background: #0d1733;
   }
-} */
+} / */
 
 body {
   background-color: var(--background) !important;
 }
-/* Header styling */
+/* / Header styling / */
 header {
   display: flex;
   align-items: center;
@@ -41,16 +40,12 @@ header h1 {
   margin: 25px;
   cursor: pointer;
 }
-/* Navigation bar styling */
-.navbar-header a {
-  color: var(--text);
-  font-size: 22px;
-}
+/* / Navigation bar styling / */
 nav {
-  justify-content: space-between;
   display: flex;
   color: var(--text);
   font-size: 22px;
+  margin-left: 4px;
 }
 .nav-element {
   padding: 0px 20px;
@@ -67,14 +62,13 @@ nav ul li a {
   color: var(--text);
   cursor: pointer;
 }
-/* Form styling */
 form {
   color: var(--text);
   margin-right: 15px;
-  margin-left: 565px;
+  /* / margin-left: 535px; / */
   text-decoration: none;
 }
-/* Footer Styling */
+/* / Footer Styling */
 footer p {
   align-items: center;
   display: inline-block;
@@ -83,4 +77,10 @@ footer p {
 }
 section {
   color: var(--text);
+  margin: 15px;
+  margin-left: 20px;
+}
+
+nav ul li:hover {
+  font-size: larger;
 }
