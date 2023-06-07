@@ -48,11 +48,15 @@ nav {
   font-size: 22px;
   margin-left: 4px;
 }
+.nav-element {
+  padding: 0px 20px;
+}
 nav ul {
   list-style-type: none;
 }
 nav ul li {
   display: inline-block;
+  justify-content: space-between;
 }
 nav ul li a {
   text-decoration: none;
@@ -62,7 +66,7 @@ nav ul li a {
 form {
   color: var(--text);
   margin-right: 15px;
-  margin-left: 565px;
+  /* margin-left: 535px; */
   text-decoration: none;
 }
 /* Footer Styling */
@@ -76,4 +80,8 @@ section {
   color: var(--text);
   margin: 15px;
   margin-left: 20px;
+}
+
+nav ul li:hover {
+  font-size: larger;
 }
