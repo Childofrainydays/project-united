@@ -2,7 +2,7 @@
 :root {
   --text: #f2e8cc;
   --red: #ff0000;
-  --green: #11ff00;
+  --green:  #11ff00;
   --blue: #1500ff;
   --background: #0d1733;
 }
@@ -26,7 +26,7 @@
 } */
 
 body {
-  background-color: var(--background) !important;
+  background-color: var(--background)!important;
 }
 /* Header styling */
 header {
@@ -42,38 +42,42 @@ header h1 {
   cursor: pointer;
 }
 /* Navigation bar styling */
+.navbar-header a{
+color: var(--text);
+font-size: 22px;
+}
 nav {
+ justify-content: space-between;
   display: flex;
-  color: var(--text);
+  color:var(--text);
   font-size: 22px;
-  margin-left: 4px;
+} 
+.nav-element {
+padding: 0px 20px;
 }
 nav ul {
   list-style-type: none;
 }
 nav ul li {
   display: inline-block;
+  justify-content: space-between;
 }
-nav ul li a {
+nav ul li a{
   text-decoration: none;
   color: var(--text);
   cursor: pointer;
 }
-form {
-  color: var(--text);
-  margin-right: 15px;
-  margin-left: 565px;
-  text-decoration: none;
+/* Form styling */
+form{
+color: var(--text);
+margin-right: 15px;
+margin-left: 565px;
+text-decoration: none;
 }
 /* Footer Styling */
-footer p {
-  align-items: center;
-  display: inline-block;
-  color: var(--text);
-  margin: 15px;
-}
-section {
-  color: var(--text);
-  margin: 15px;
-  margin-left: 20px;
+footer p{
+align-items: center;
+display: inline-block;
+color: var(--text);
+margin: 15px;
 }
